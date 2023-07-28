@@ -1,5 +1,7 @@
 # Simple-React-Chat
 
+There is a simple react chat based on [React-Chat-Engine](https://chatengine.io/)
+
 ## Run ✈️
 
 - Clone the project
