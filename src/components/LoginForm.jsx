@@ -1,42 +1,42 @@
-import React, { useState } from "react";
-import axios from "axios";
+import React, { useState } from 'react';
+import axios from 'axios';
 
-const projectID = "37752325-3f2d-4e0e-8445-a0096ce27719";
+const projectID = '37752325-3f2d-4e0e-8445-a0096ce27719';
 
 function LoginForm() {
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     const authObject = {
-      "Project-ID": projectID,
-      "User-Name": username,
-      "User-Secret": password,
+      'Project-ID': projectID,
+      'User-Name': username,
+      'User-Secret': password,
     };
 
     try {
-      await axios.get("https://api.chatengine.io/chats", {
+      await axios.get('https://api.chatengine.io/chats', {
         headers: authObject,
       });
 
-      localStorage.setItem("username", username);
-      localStorage.setItem("password", password);
+      localStorage.setItem('username', username);
+      localStorage.setItem('password', password);
 
       window.location.reload();
-      setError("");
+      setError('');
     } catch (err) {
-      setError("Oops, incorrect credentials.");
+      setError('Oops, incorrect credentials.');
     }
   };
 
   return (
     <div className="wrapper">
-      <div className="form">
-        <h1 className="title-1">Welcome</h1>
-        <p className="title-2">Please Login</p>
+      <div className="login_form">
+        <h1 className="title_1">Welcome</h1>
+        <p className="title_2">Please Login</p>
         <form onSubmit={handleSubmit}>
           <input
             type="text"

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 function MyMessage({ message }) {
   if (message.attachments && message.attachments.length > 0) {
@@ -7,7 +7,7 @@ function MyMessage({ message }) {
         src={message.attachments[0].file}
         alt="message-attachment"
         className="message-image"
-        style={{ float: "right" }}
+        style={{ float: 'right' }}
       />
     );
   }
@@ -16,11 +16,10 @@ function MyMessage({ message }) {
     <div
       className="message"
       style={{
-        float: "right",
-        marginRight: "18px",
-        color: "white",
-        
-        backgroundColor: "#3B2A50",
+        float: 'right',
+        marginRight: '18px',
+        color: 'white',
+        backgroundColor: '#3B2A50',
       }}
     >
       {message.text}
