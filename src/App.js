@@ -1,6 +1,5 @@
 import "./App.css";
 import { ChatEngine, getOrCreateChat } from "react-chat-engine";
-// import ChatFeed from "./components/ChatFeed";
 import LoginForm from "./components/LoginForm";
 import { useState } from "react";
 
@@ -17,7 +16,7 @@ function App() {
 
   const renderChatForm = (creds) => {
     return (
-      <div style={{ marginBottom: "20px", marginTop: "10px" }}>
+      <div style={{ marginBottom: "20px", marginTop: "10px", marginLeft: "10px", }}>
         <input
           placeholder="Username"
           value={username}
