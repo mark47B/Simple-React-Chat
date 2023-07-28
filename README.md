@@ -2,6 +2,21 @@
 
 There is a simple react chat based on [React-Chat-Engine](https://chatengine.io/)
 
+## Test credentials 
+
+> Username: useruser<br/>
+> Password: useruser<br/>
+
+<br/>
+
+> Username: admin<br/>
+> Password: admin<br/>
+
+<br/>
+
+> Username: adminadmin<br/>
+> Password: adminadmin<br/>
+
 ## Run ✈️
 
 - Clone the project
